@@ -10,7 +10,7 @@ scrape_configs:
     target_groups:
       - targets: ['DB_NODE_IP:9104']
         labels:
-          alias: ts140i
+          alias: db1
 
   - job_name: mysql_mr
     scrape_interval:    5s
@@ -18,7 +18,7 @@ scrape_configs:
     target_groups:
       - targets: ['DB_NODE_IP:9204']
         labels:
-          alias: ts140i
+          alias: db1
 
   - job_name: mysql_lr
     scrape_interval:    60s
@@ -26,17 +26,17 @@ scrape_configs:
     target_groups:
       - targets: ['DB_NODE_IP:9304']
         labels:
-          alias: ts140i
+          alias: db1
 
   - job_name: linux
     target_groups:
       - targets: ['DB_NODE_IP:9100']
         labels:
-          alias: ts140i
+          alias: db1
 
   - job_name: prometheus
     target_groups:
       - targets: ['localhost:9090']
         labels:
-          alias: zts
+          alias: monitor
 

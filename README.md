@@ -1,6 +1,6 @@
 # Docker container with Grafana + Prometheus
 
-Assuming `192.168.56.107` is db node aliased as `ts140i` in Prometheus config.
+Assuming `192.168.56.107` is db node aliased as `db1` in Prometheus config.
 
 ### Preparation
 
