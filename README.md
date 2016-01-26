@@ -34,7 +34,7 @@ Alternatively, with persistent storage:
 ### Create MySQL user on the host machine for access by mysqld_exporter:
 
     mysql> GRANT REPLICATION CLIENT, PROCESS ON *.* TO 'prom'@'%' identified by 'abc123';
-    mysql> GRANT SELECT ON performance_schema.* TO 'prom'@'%' identified by 'abc123';
+    mysql> GRANT SELECT ON performance_schema.* TO 'prom'@'%';
 
 ### Build docker image:
 
